@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .update-container {
+            background: #fff;
+            border-radius: 12px;
+            width: 400px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            animation: fadeIn 0.7s ease-in-out;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 15px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #4ca1af;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #2c3e50;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 450px) {
+            .update-container {
+                width: 90%;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="update-container">
+        <h2>Update Health Details</h2>
+        <form>
+
+            <input type="time" name="sleep_time" placeholder="Sleep Time" required>
+            <input type="time" name="walk_time" placeholder="Walk Time" required>
+            <input type="number" name="steps" placeholder="Steps" min="0" required>
+            
+            <input type="number" name="heart_rate" placeholder="Heart Rate (bpm)" min="0">
+            <input type="text" name="blood_pressure" placeholder="Blood Pressure (e.g., 120/80)">
+            
+            <textarea name="health_update" placeholder="Health Update / Symptoms"></textarea>
+            <input type="text" name="hospital_info" placeholder="Hospital / Clinic Name">
+            <input type="text" name="doctor_name" placeholder="Doctor Name">
+            <textarea name="notes" placeholder="Additional Notes / Comments"></textarea>
+
+            <button type="submit" onclick="alert('Health details updated successfully!'); return false;">
+                Update Details
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Goals</title>
+    <style>
+        /* Body & Background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main Container */
+        .wellness-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            width: 90%;
+            max-width: 900px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            animation: fadeIn 0.7s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* Goal Cards */
+        .goal-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .goal-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .goal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .goal-card h2 {
+            margin: 0 0 10px;
+            font-size: 22px;
+            color: #4ca1af;
+        }
+
+        .goal-card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Progress bar */
+        .progress-container {
+            background: #eee;
+            border-radius: 8px;
+            height: 12px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(to right, #4ca1af, #2c3e50);
+            border-radius: 8px;
+        }
+
+        /* Motivational Message */
+        .motivation {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #4ca1af;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .goal-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wellness-container">
+        <h1>Wellness Goals</h1>
+        
+        <div class="goal-cards">
+            <div class="goal-card">
+                <h2>Daily Steps</h2>
+                <p>Goal: 10,000 steps</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <p>7,000 steps completed</p>
+            </div>
+
+            <div class="goal-card">
+                <h2>Water Intake</h2>
+                <p>Goal: 2 Liters</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+                <p>1 Liter consumed</p>
+            </div>
+
+            <div class="goal-card">
+                <h2>Sleep</h2>
+                <p>Goal: 8 hours</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+                <p>6 hours slept</p>
+            </div>
+
+            <div class="goal-card">
+                <h2>Calories</h2>
+                <p>Goal: 2,500 kcal</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <p>1,500 kcal consumed</p>
+            </div>
+        </div>
+
+        <div class="motivation">
+            "Consistency is key! Keep pushing towards your wellness goals 💪"
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Page</title>
+    <style>
+        /* Body & Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Alert Card */
+        .alert-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px 30px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        .alert-card h1 {
+            color: #d9534f; /* Red color for alert */
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .alert-card p {
+            color: #2c3e50;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .alert-card ul {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .alert-card li {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        /* Button */
+        .alert-card button {
+            margin-top: 25px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #4f94d9;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .alert-card button:hover {
+            background: #930c07;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .alert-card {
+                width: 90%;
+                padding: 30px 20px;
+            }
+
+            .alert-card h1 {
+                font-size: 24px;
+            }
+
+            .alert-card p, .alert-card li {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="alert-card">
+        <h1>⚠️ Important Alert</h1>
+        <p>Please follow these safety instructions immediately:</p>
+        <ul>
+            <li>Stay calm and do not panic.</li>
+            <li>Ensure your surroundings are safe.</li>
+            <li>Follow the emergency evacuation procedures if needed.</li>
+            <li>Keep your phone charged and accessible.</li>
+            <li>Inform nearby authorities or contacts about your safety.</li>
+            <li>Do not ignore any warnings or updates.</li>
+        </ul>
+        <button onclick="alert('Stay Safe! Follow the instructions.')">Acknowledge</button>
+    </div>
+
+</body>
+</html>

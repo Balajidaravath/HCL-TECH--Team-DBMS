@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        /* Background & Body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Profile Card Container */
+        .profile-container {
+            background: #fff;
+            border-radius: 12px;
+            width: 400px;
+            padding: 30px 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            text-align: center;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        /* Profile Image */
+        .profile-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #4ca1af;
+        }
+
+        /* Name & Info */
+        .profile-container h2 {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .profile-container p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Health Details Card */
+        .health-details {
+            background: #f7f7f7;
+            border-radius: 8px;
+            margin-top: 20px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .health-details h3 {
+            margin-top: 0;
+            color: #4ca1af;
+            font-size: 16px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .health-details p {
+            margin: 8px 0;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* Buttons */
+        .profile-container button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            background: #4ca1af;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .profile-container button:hover {
+            background: #2c3e50;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 450px) {
+            .profile-container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .profile-container img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <img src="C:\Users\91798\Downloads\download.webp" alt="Profile Picture">
+        <h2>Team DBMS</h2>
+        <p>Email: teamdbmsgmail.com</p>
+        <p>Phone: +1234567890</p>
+
+        <div class="health-details">
+            <h3>Health Details</h3>
+            <p>Age: 28 years</p>
+            <p>Height: 175 cm</p>
+            <p>Weight: 70 kg</p>
+            <p>Blood Group: O+</p>
+        </div>
+
+        <button>Edit Profile</button>
+    </div>
+
+</body>
+</html>

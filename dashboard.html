@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="sidebar-title">Health</h2>
+
+        <ul class="menu">
+            <li>Dashboard</li>
+            <li>My Profile</li>
+            <li>Wellness Goals</li>
+            <li>Messages</li>
+            <li>Alerts</li>
+            <li>Logout</li>
+    
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <h2>Welcome, Team DBMS</h2>
+
+        <!-- Wellness Goals -->
+        <section class="section-title">Wellness Goals</section>
+
+        <div class="cards">
+            
+            <!-- Steps Card -->
+            <div class="card">
+                <div class="label-row">
+                    <span class="title">Steps</span>
+                    <span class="value"> 2000/ 6000 steps</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width:33.33%;"></div>
+                </div>
+            </div>
+
+            <!-- Active Time Card -->
+            <div class="card">
+                <div class="label-row">
+                    <span class="title">Active Time</span>
+                    <span class="value">56 / 60 mins</span>
+                </div>
+                <p class="sub-info">1712 Kcal | 1.23 km</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width:93%;"></div>
+                </div>
+            </div>
+
+            <!-- Sleep Card -->
+            <div class="card">
+                <div class="label-row">
+                    <span class="title">Sleep</span>
+                    <span class="value">6 hrs 30 mins</span>
+                </div>
+                <p class="sub-info">11:30 pm – 06:00 am</p>
+                <div class="sleep-bar">
+                    <div class="sleep-cycle"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Preventive Care Reminders -->
+        <section class="section-title">Preventive Care Reminders</section>
+        <div class="reminder-card">
+            <ul>
+                <li>Dear Team DBMS do regular health checkups</li>
+            </ul>
+        </div>
+
+        <!-- Health Tip -->
+        <section class="section-title">Health Tip of the Day</section>
+        <div class="tip-card">
+            Take food on time
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
